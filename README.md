@@ -2,6 +2,8 @@
 
 Autonomous investment memo generator with a self-critique loop. Powered by real SEC EDGAR filings, live news via Tavily, and Claude AI.
 
+**Live demo:** https://research-agent-sriram.vercel.app
+
 ## How it works
 
 ```
