@@ -68,7 +68,7 @@ Be specific. Only flag factual or logical problems — not writing style."""
     print(f"[Critic] Reviewing draft memo (revision {revision_count})...")
 
     message = client.messages.create(
-        model="claude-3-5-haiku-20241022",  # Haiku is fast and cheap for review tasks
+        model="claude-haiku-4-5-20251001",  # Haiku is fast and cheap for review tasks
         max_tokens=600,
         messages=[{"role": "user", "content": prompt}]
     )
