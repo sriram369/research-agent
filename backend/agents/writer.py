@@ -96,7 +96,7 @@ Write the memo now:"""
     print(f"[Writer] Writing investment memo for {company} (revision {revision_count})...")
 
     message = client.messages.create(
-        model="claude-sonnet-4-6",  # Sonnet for quality writing
+        model="claude-3-5-sonnet-20241022",  # Sonnet for quality writing
         max_tokens=2500,
         messages=[{"role": "user", "content": prompt}]
     )

@@ -30,7 +30,7 @@ Example format:
 Now generate the 4 tasks for {company}:"""
 
     message = client.messages.create(
-        model="claude-haiku-4-5-20251001",  # cheap + fast, no need for Sonnet here
+        model="claude-3-5-haiku-20241022",  # cheap + fast, no need for Sonnet here
         max_tokens=300,
         messages=[{"role": "user", "content": prompt}]
     )
