@@ -4,7 +4,7 @@ from anthropic import Anthropic
 from agents.state import ResearchState
 
 load_dotenv("../.env")
-client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"), max_retries=5)
 
 MAX_REVISIONS = 3
 
